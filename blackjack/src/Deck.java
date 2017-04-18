@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Deck {
   ArrayList<Card> cards = new ArrayList<>();
@@ -15,5 +16,9 @@ public class Deck {
         cards.add(new Card(colors[numberOfCards % 4], values[(int) Math.random() * 13]));
       }
     }
+  }
+
+  void shuffle() {
+    Collections.shuffle(cards);
   }
 }

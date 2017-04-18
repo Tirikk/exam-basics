@@ -5,10 +5,10 @@ public class Deck {
   ArrayList<Card> cards = new ArrayList<>();
 
   Deck(int numberOfCards) {
-    String[] colors = {"hearts", "spades", "diamonds", "clubs"};
-    String[] values = {"ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
+    String[] colors = {"Clubs", "Diamonds", "Hearts", "Spades"};
+    String[] values = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
     for (int i = 0; i < numberOfCards; i++) {
-      cards.add(new Card(colors[i % 4], values[(int) (Math.random() * 13)]));
+      cards.add(new Card(colors[i % colors.length], values[(int) (Math.random() * 13)]));
     }
   }
 
@@ -17,8 +17,8 @@ public class Deck {
   }
 
   Card draw() {
-    Card temp = cards.get(0);
-    cards.remove(0);
+    Card temp = cards.get(cards.size() - 1);
+    cards.remove(cards.size() - 1);
     return temp;
   }
 

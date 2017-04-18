@@ -10,7 +10,10 @@ public class Deck {
       for (int i = 0; i < numberOfCards; i++) {
         cards.add(new Card(colors[i], values[(int) Math.random() * 13]));
       }
+    } else {
+      for (int i = 0; i < numberOfCards; i++) {
+        cards.add(new Card(colors[numberOfCards % 4], values[(int) Math.random() * 13]));
+      }
     }
   }
-
 }

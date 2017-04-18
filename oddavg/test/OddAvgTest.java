@@ -19,4 +19,13 @@ class OddAvgTest {
     ArrayList<Integer> listOfNumbers = new ArrayList<>();
     assertEquals(Double.NaN, OddAvg.oddAverage(listOfNumbers));
   }
+
+  @Test
+  void testOddAverage_onlyEvens() {
+    ArrayList<Integer> listOfNumbers = new ArrayList<>();
+    for (int i = 0; i < 10; i += 2) {
+      listOfNumbers.add(i);
+    }
+    assertEquals(Double.NaN, OddAvg.oddAverage(listOfNumbers));
+  }
 }

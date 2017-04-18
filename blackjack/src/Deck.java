@@ -21,4 +21,10 @@ public class Deck {
   void shuffle() {
     Collections.shuffle(cards);
   }
+
+  Card draw() {
+    Card temp = cards.get(0);
+    cards.remove(0);
+    return temp;
+  }
 }

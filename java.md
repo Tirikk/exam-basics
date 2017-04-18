@@ -38,12 +38,12 @@ The application is accepted if:
 1: method declaration   
 2: return type
 3: method name
-4: parameter  
-5: argument  
+4: parameter type
+5: parameter name
 6: variable  
 7: method body  
 8: return statement  
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:
-A constructor is a method in a class that is used for initializing an object belonging in that class, and for specifying the field values for that object if they are provided as parameters. It is used when the object is instantiated. 
+A constructor is a method in a class that is used for initializing an object belonging in that class, and for specifying the field values for that object if they are provided as parameters. It is used when the object is instantiated.

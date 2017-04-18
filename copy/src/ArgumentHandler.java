@@ -5,6 +5,8 @@ public class ArgumentHandler {
       Operations.printUsage();
     } else if (args.length == 1) {
       Operations.noDestination();
+    } else if (args.length == 2) {
+      Operations.copy(args[0], args[1]);
     }
   }
 }

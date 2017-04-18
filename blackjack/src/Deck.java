@@ -8,7 +8,7 @@ public class Deck {
     String[] colors = {"Clubs", "Diamonds", "Hearts", "Spades"};
     String[] values = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
     for (int i = 0; i < numberOfCards; i++) {
-      cards.add(new Card(colors[i % colors.length], values[(int) (Math.random() * 13)]));
+      cards.add(new Card(colors[i % colors.length], values[(int) (Math.random() * values.length)]));
     }
   }
 

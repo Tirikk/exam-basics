@@ -7,12 +7,17 @@ public class OddAvg {
     // Create basic unit tests for it with at least 3 different test cases
   }
 
-  public double oddAverage(ArrayList<Double> listOfNumbers) {
-    ArrayList<Double> oddNumbers = new ArrayList<>();
-    for (Double number : listOfNumbers) {
+  public static double oddAverage(ArrayList<Integer> listOfNumbers) {
+    ArrayList<Integer> oddNumbers = new ArrayList<>();
+    for (int number : listOfNumbers) {
       if (number % 2 != 0) {
         oddNumbers.add(number);
       }
     }
+    double sum = 0;
+    for (int oddNumber : oddNumbers) {
+      sum += oddNumber;
+    }
+    return sum / oddNumbers.size();
   }
 }

@@ -34,16 +34,15 @@ The application is accepted if:
 
 ![anatomy](anatomy/AnatomyJava.png)
 
-#### Your answer:
-[add your answer here]   
-1:   
-2:   
-3:   
-4:   
-5:   
-6:   
-7:   
-8:   
+#### Your answer:  
+1: method declaration   
+2: return type
+3: method name
+4: parameter  
+5: argument  
+6: variable  
+7: method body  
+8: return statement  
 
 ### What is the constructor? When it is used? [2p]
 #### Your answer:

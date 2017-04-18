@@ -6,4 +6,8 @@ public class Card {
     this.color = color;
     this.value = value;
   }
+
+  public String toString() {
+    return value + " of " + color;
+  }
 }

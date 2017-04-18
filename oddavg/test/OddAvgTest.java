@@ -14,4 +14,9 @@ class OddAvgTest {
     assertEquals(5.0, OddAvg.oddAverage(listOfNumbers));
   }
 
+  @Test
+  void testOddAverage_empty() {
+    ArrayList<Integer> listOfNumbers = new ArrayList<>();
+    assertEquals(Double.NaN, OddAvg.oddAverage(listOfNumbers));
+  }
 }
